@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allisson Cavalcanti Campos | Currículo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="toolbar">
+    <span>Currículo</span>
+    <button class="tb solid" onclick="window.print()">⬇ Baixar PDF</button>
+  </div>
+
+  <div class="sheet">
+    <aside class="side">
+      <div class="avatar">AC</div>
+
+      <section class="sec"><h3>Contato</h3>
+        <ul class="contact">
+          <li><i>✉</i><a id="email"></a></li>
+          <li><i>✆</i><span id="phone"></span></li>
+          <li><i>⌖</i><span data-field="location"></span></li>
+          <li class="social" id="social"></li>
+        </ul>
+      </section>
+      <section class="sec"><h3>Conhecimentos</h3><div id="skills"></div></section>
+      <section class="sec"><h3>Comportamentais</h3><div class="tag-list" id="behavioral"></div></section>
+      <section class="sec"><h3>Ferramentas</h3><div class="tag-list" id="tools"></div></section>
+      <section class="sec"><h3>Idiomas</h3><div id="languages"></div></section>
+      <section class="sec"><h3>Cursos</h3><div id="courses"></div></section>
+    </aside>
+
+    <main class="main">
+      <header>
+        <h1 data-field="name"></h1>
+        <h2 data-field="title"></h2>
+      </header>
+      <section class="sec"><h3>Perfil profissional</h3><p class="txt" data-field="summary"></p></section>
+      <section class="sec"><h3>Objetivo</h3><p class="txt" data-field="objective"></p><p class="txt muted"><b>Área de interesse:</b> <span data-field="specialization"></span></p></section>
+      <section class="sec"><h3>Experiência profissional</h3><div class="timeline" id="experience"></div></section>
+      <section class="sec"><h3>Formação acadêmica</h3><div class="cards-grid" id="education"></div></section>
+      <section class="sec"><h3>Projetos</h3><div id="projects"></div></section>
+      <section class="sec"><h3>Informações adicionais</h3><p class="txt" data-field="availability"></p></section>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
